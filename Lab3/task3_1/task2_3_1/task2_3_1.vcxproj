@@ -134,7 +134,6 @@
   <ItemGroup>
     <ClInclude Include="Cappuccino.h" />
     <ClInclude Include="Coffee.h" />
-    <ClInclude Include="CoffeeMachine.h" />
     <ClInclude Include="CoffeeMachineFactory.h" />
     <ClInclude Include="CoffeeShop.h" />
     <ClInclude Include="Espresso.h" />
@@ -143,13 +142,11 @@
     <ClInclude Include="NespressoAmericano.h" />
     <ClInclude Include="NespressoCappuccino.h" />
     <ClInclude Include="NespressoCoffeeFactory.h" />
-    <ClInclude Include="NespressoCoffeeMachine.h" />
     <ClInclude Include="NespressoEspresso.h" />
     <ClInclude Include="NespressoLatte.h" />
     <ClInclude Include="PhilipsAmericano.h" />
     <ClInclude Include="PhilipsCappuccino.h" />
     <ClInclude Include="PhilipsCoffeeFactory.h" />
-    <ClInclude Include="PhilipsCoffeeMachine.h" />
     <ClInclude Include="PhilipsEspresso.h" />
     <ClInclude Include="PhilipsLatte.h" />
   </ItemGroup>

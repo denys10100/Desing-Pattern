@@ -16,9 +16,6 @@
     <Filter Include="Header Files\Drinks">
       <UniqueIdentifier>{7bbf8859-cb2b-44dc-890b-b8fce4687cce}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\CoffeeMachines">
-      <UniqueIdentifier>{41f879ab-443c-43bc-b5cc-5be14ce87a67}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\CoffeeMachineFactories">
       <UniqueIdentifier>{f13a5a29-87f8-4f44-9bd7-348331021b18}</UniqueIdentifier>
     </Filter>
@@ -49,15 +46,6 @@
     </ClInclude>
     <ClInclude Include="Latte.h">
       <Filter>Header Files\Drinks</Filter>
-    </ClInclude>
-    <ClInclude Include="CoffeeMachine.h">
-      <Filter>Header Files\CoffeeMachines</Filter>
-    </ClInclude>
-    <ClInclude Include="PhilipsCoffeeMachine.h">
-      <Filter>Header Files\CoffeeMachines</Filter>
-    </ClInclude>
-    <ClInclude Include="NespressoCoffeeMachine.h">
-      <Filter>Header Files\CoffeeMachines</Filter>
     </ClInclude>
     <ClInclude Include="CoffeeMachineFactory.h">
       <Filter>Header Files\CoffeeMachineFactories</Filter>
