@@ -2,8 +2,8 @@ public class Triangle {
     private float a;
     private float b;
     private float c;
-    private float minSquare;
-    private TriangleMemento minSquareMemento;
+    private float maxSquare;
+    private TriangleMemento maxSquareMemento;
 
     public Triangle(float a, float b, float c) {
         assert checkExistence(a, b, c);
@@ -11,8 +11,8 @@ public class Triangle {
         this.a = a;
         this.b = b;
         this.c = c;
-        this.minSquare = square();
-        this.minSquareMemento = createMemento();
+        this.maxSquare = square();
+        this.maxSquareMemento = createMemento();
     }
 
     public static boolean checkExistence(float a, float b, float c) {
@@ -22,7 +22,7 @@ public class Triangle {
     public void setA(float a) {
         if (checkExistence(a, b, c)) {
             this.a = a;
-            updateMinSquare();
+            updateMaxSquare();
         } else {
             System.out.println("Error: value is not set");
         }
@@ -31,7 +31,7 @@ public class Triangle {
     public void setB(float b) {
         if (checkExistence(a, b, c)) {
             this.b = b;
-            updateMinSquare();
+            updateMaxSquare();
         } else {
             System.out.println("Error: value is not set");
         }
@@ -40,7 +40,7 @@ public class Triangle {
     public void setC(float c) {
         if (checkExistence(a, b, c)) {
             this.c = c;
-            updateMinSquare();
+            updateMaxSquare();
         } else {
             System.out.println("Error: value is not set");
         }
@@ -56,11 +56,11 @@ public class Triangle {
         return (float) Math.sqrt(s);
     }
 
-    public void updateMinSquare() {
+    public void updateMaxSquare() {
         float currentSquare = square();
-        if (currentSquare < minSquare) {
-            minSquare = currentSquare;
-            minSquareMemento = createMemento();
+        if (currentSquare > maxSquare) {
+            maxSquare = currentSquare;
+            maxSquareMemento = createMemento();
         }
     }
 
@@ -74,21 +74,7 @@ public class Triangle {
         this.c = memento.getC();
     }
 
-    public void restoreToMinSquare() {
-        restoreFromMemento(minSquareMemento);
-    }
-
-    public void doubleSides() {
-        this.a *= 2;
-        this.b *= 2;
-        this.c *= 2;
-        updateMinSquare();
-    }
-
-    public void halveSides() {
-        this.a /= 2;
-        this.b /= 2;
-        this.c /= 2;
-        updateMinSquare();
+    public void restoreToMaxSquare() {
+        restoreFromMemento(maxSquareMemento);
     }
 }
