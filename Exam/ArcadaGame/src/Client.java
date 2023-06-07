@@ -8,7 +8,7 @@ public class Client {
         gameScene.addMonster(MonsterFactory.createMonster(MonsterType.DEMON, gameScene.level));
         gameScene.addMonster(MonsterFactory.createMonster(MonsterType.DEMON, gameScene.level));
         gameScene.addMonster(MonsterFactory.createMonster(MonsterType.ZOMBIE, gameScene.level));
-
+        gameScene.addMonster(MonsterFactory.createMonster(MonsterType.CACODEMON, gameScene.level));
         gameScene.start();
     }
 }

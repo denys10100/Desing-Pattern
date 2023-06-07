@@ -9,7 +9,8 @@ public class MonsterFactory {
 
             case DEMON:
                 return new Demon(level);
-
+            case CACODEMON:
+                return new Cacodemon(level);
             default:
                 throw new IllegalStateException("Unexpected type: " + type);
         }
